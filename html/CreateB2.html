@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Character Builder</title>
+  <link rel="stylesheet" href="CreateB2.css" />
+</head>
+<body>
+  <div class="wrapper">
+
+    <!-- 上方白色選項列 -->
+    <div class="top-bar">
+      <img src="img/arrow-left.png" class="arrow" onclick="prev()">
+      <div class="icon-preview" onclick="select('head')"></div>
+      <div class="icon-preview" onclick="select('face')"></div>
+      <div class="icon-preview" onclick="select('body')"></div>
+      <div class="icon-preview" onclick="select('legs')"></div>
+      <img src="img/arrow-right.png" class="arrow" onclick="next()">
+    </div>
+
+    <!-- 主畫面三欄 -->
+    <div class="main-content">
+      <!-- 左邊圖片選單 -->
+      <div class="side-menu" id="side-options"></div>
+
+      <!-- 中央角色舞台 -->
+      <div class="stage">
+        <div class="part" id="head-part">
+          <div id="head"></div>
+          <div id="face"></div>
+        </div>
+        <div class="part" id="body"></div>
+        <div class="part" id="legs"></div>
+        <a href="CreateBDone.html"><img src="img/next.png" class="next-button" alt="Next"></a>
+      </div>
+
+      <!-- 右側顏色按鈕 -->
+      <div class="color-menu" id="color-options"></div>
+    </div>
+
+    <!-- 左下返回按鈕 -->
+    <a href="Create.html"><img class="back-button" src="img/back.png" alt="Back"></a>
+
+  </div>
+
+  <script src="Create.js"></script>
+</body>
+</html>

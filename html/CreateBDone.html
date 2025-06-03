@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="CreateBDone.css" />
+  <title>Create Done</title>
+</head>
+<script src="CreateBDone.js"></script>
+
+<body>
+  <div class="create-bdone">
+    <div class="container">
+      <img class="back" src="img/back.png" alt="back"  />
+
+      <div class="frame">
+        <img class="welcome" src="img/Welcome to Cardi+,.png" alt="welcome" />
+        <div class="username" id="username">variable</div>
+        <img class="monster" src="img/Monsters Standing.png" alt="monster" />
+      
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // 假設從上一頁用 localStorage 傳入名字
+    const name = localStorage.getItem("username") || "Player";
+    document.getElementById("username").innerText = name;
+  </script>
+</body>
+</html>
